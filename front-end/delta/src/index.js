@@ -4,14 +4,14 @@ import ApolloClient from "apollo-boost";
 import {ApolloProvider} from "react-apollo"
 
 import './index.css';
-import App from './App';
+import Routes from './router';
 import * as serviceWorker from './serviceWorker';
 const client = new ApolloClient({
-    uri: "http://localhost:3001/"
+    uri: "http://localhost:4000"
   });
 ReactDOM.render(
 <ApolloProvider client={client}>
-<App />
+<Routes />
 </ApolloProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

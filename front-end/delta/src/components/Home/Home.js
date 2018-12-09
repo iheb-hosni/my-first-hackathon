@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MenuExampleContentProp from "../navmenu/navmenu.js"
-import Footer from "../Footer/Footer"
+// import Footer from "../Footer/Footer"
 import Slide from "../slider/App";
 import Slider from "./essayage/App"
 import Sliders from "./personalise/App"
