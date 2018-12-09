@@ -1,0 +1,20 @@
+.slider-items{
+    display: flex;
+   justify-content: space-around; 
+}
+img {
+    height:250px; 
+    width:330px;
+ }
+.slider-brand{
+    width: 25%;
+    background-size: contain;
+ }
+.slider-try{
+    width: 25%;
+    background-size: contain;
+}
+.slider-perso{
+    width: 25%;
+    background-size: contain;
+}
