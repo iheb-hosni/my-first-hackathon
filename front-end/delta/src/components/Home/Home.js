@@ -4,7 +4,6 @@ import Footer from "../Footer/Footer"
 import Slide from "../slider/App";
 import Slider from "./essayage/App"
 import Sliders from "./personalise/App"
-import Promo from "./promotion"
 import Header from "../Header/Header.js"
 import "./home.css"
 
@@ -13,13 +12,11 @@ export default class Home extends Component {
     return (
       <div>
         <div>
-          <div>
+          <div className="header">
                 <Header />
           </div>
         <MenuExampleContentProp />
-        <div>
-          <Promo />
-        </div>
+        
         <div className="slider-items">
         <div className="slider-brand">
         <Slide/>
@@ -32,17 +29,8 @@ export default class Home extends Component {
         </div>
         </div>
         </div>
-        <div>
-
-        
-        </div>
-      <div>
-        
-      </div>
-       <div>
-      <Footer/>
-      </div>
-      </div>
+       
+  </div>
   
     )
   }

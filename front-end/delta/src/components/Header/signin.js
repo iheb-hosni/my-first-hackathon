@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-
+import "./header.css"
 const SignIn =()=>{
     return(
-        <div>
+        <div className="signin">
  <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
 Sign In</button>
 

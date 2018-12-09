@@ -1,0 +1,23 @@
+.collapse{
+     justify-content: flex-end;
+    margin-left:100px;
+ 
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	z-index:5255555551;
+    transition: .5s;
+    top:0;
+}
+nav.black{
+	background:#7d8892;
+	height: 70px;
+}
+.signin{
+    margin:0 10px;
+}
+ .logo{
+     height: 40px;
+     width: 160px;
+ }
