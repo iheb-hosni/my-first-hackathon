@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Dropdown } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
  
 import "./navmenu.css"
 
@@ -45,18 +46,22 @@ export default class MenuExampleContentProp extends Component {
               <Dropdown.Item>Enfant</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <Link to="/essayage">
         <Menu.Item
           name='upcomingEvents'
           active={activeItem === 'upcomingEvents'}
           content='Esseyage'
           onClick={this.handleItemClick}
         />
+        </Link>
+        <Link to="/essayage">
         <Menu.Item
           name='upcomingEvents'
           active={activeItem === 'upcomingEvents'}
           content='personaisé votre produit '
           onClick={this.handleItemClick}
         />
+        </Link>
        
       </Menu>
       
