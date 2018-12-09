@@ -1,3 +1,33 @@
 .footer{
-    border:1px solid;
+     margin-top:500px;
 }
+.button{
+    margin-bottom:60px;
+}
+.our-adr{
+      margin-top:10px;
+      background: url('https://imgur.com/OmTjsAW.jpg');
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	animation: animate 10s linear infinite;
+	font-size: 40px;
+	font-weight: bold;
+ }
+ @keyframes animate
+{
+	0%
+	{
+		background-position: 0 0;
+	}
+	100%
+	{
+		background-position: 100% 100%;
+	}
+}
+.our-adr:hover{
+    border-top:1px solid;
+    border-bottom: 1px solid
+}
+ .adr{
+      margin-top: 40px;
+  }

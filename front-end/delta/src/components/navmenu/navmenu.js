@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { Menu, Dropdown } from 'semantic-ui-react';
+ 
+import "./navmenu.css"
 
 export default class MenuExampleContentProp extends Component {
   state = {}
@@ -8,35 +10,41 @@ export default class MenuExampleContentProp extends Component {
 
   render() {
     const { activeItem } = this.state
-
+   
     return (
+        <div className="menu">
       <Menu>
-        <Menu.Item
-          name='editorials'
-          active={activeItem === 'editorials'}
-          content='ZARA'
-          onClick={this.handleItemClick}
-        />
+      <Dropdown item text='ZARA'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Homme</Dropdown.Item>
+              <Dropdown.Item>Femme</Dropdown.Item>
+              <Dropdown.Item>Enfant</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        
 
-        <Menu.Item
-          name='reviews'
-          active={activeItem === 'reviews'}
-          content='CELIO'
-          onClick={this.handleItemClick}
-        />
+        <Dropdown item text='CELIO'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Homme</Dropdown.Item>
+              <Dropdown.Item>Femme</Dropdown.Item>
+              <Dropdown.Item>Enfant</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
 
-        <Menu.Item
-          name='upcomingEvents'
-          active={activeItem === 'upcomingEvents'}
-          content='EXIST'
-          onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name='upcomingEvents'
-          active={activeItem === 'upcomingEvents'}
-          content='H&M'
-          onClick={this.handleItemClick}
-        />
+        <Dropdown item text='EXIST'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Homme</Dropdown.Item>
+              <Dropdown.Item>Femme</Dropdown.Item>
+              <Dropdown.Item>Enfant</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+          <Dropdown item text='H&M'>
+            <Dropdown.Menu>
+              <Dropdown.Item>Homme</Dropdown.Item>
+              <Dropdown.Item>Femme</Dropdown.Item>
+              <Dropdown.Item>Enfant</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         <Menu.Item
           name='upcomingEvents'
           active={activeItem === 'upcomingEvents'}
@@ -52,6 +60,7 @@ export default class MenuExampleContentProp extends Component {
        
       </Menu>
       
+    </div>
     )
   }
 }

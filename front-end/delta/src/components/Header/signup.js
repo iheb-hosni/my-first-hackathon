@@ -10,20 +10,20 @@ Sign Up</button>
   <div className="modal-dialog modal-dialog-centered" role="document">
     <div className="modal-content">
       <div className="modal-header">
-        <h5 className="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <h5 className="modal-title" id="exampleModalCenterTitle">Sign Up</h5>
         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div className="modal-body">
          <div>
-             <form>
+             <form name="f">
              <div class="form-group">
-    <label for="exampleInputPassword1"> First name</label>
-    <input type="text" class="form-control" id="lastname" placeholder="First name"/>
+    <label > First name</label>
+    <input type="text" class="form-control" id="lastname" placeholder="First name" required/>
             </div>
             <div class="form-group">
-    <label for="exampleInputPassword1"> last name</label>
+    <label> last name</label>
     <input type="text" class="form-control" id="lastname" placeholder="last name"/>
             </div>
              <div class="form-group">
